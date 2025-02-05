@@ -1,4 +1,6 @@
 function famAnswerSlider() {
+    if ($('.farmAnswerSlider').length === 0) return;
+
     const totalSlides = $('.farmAnswerSlider__main .farmAnswerSlider__slide').length;
     let leftSwiper, rightSwiper, mainSwiper;
 
@@ -69,6 +71,19 @@ function famAnswerSlider() {
     }, 0);
 }
 
+
+
+function seedlingSlider(){
+    if($(".seedlingSlider").length == 0) return;
+    var swiper = new Swiper(".seedlingSlider", {
+        pagination: {
+            el: ".swiper-pagination",
+        },
+    });
+}
+
+
 $(function(){
     famAnswerSlider();
+    seedlingSlider();
 });
