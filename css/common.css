@@ -2,49 +2,54 @@
 
 a {text-decoration: none;}
 
+@charset "utf-8";
 @font-face {
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 400;
-    src: url(../fonts/Jost-Regular.woff) format('woff'),
-         url(../fonts/Jost-Regular.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 500;
-    src: url(../fonts/Jost-Regular.woff) format('woff'),
-         url(../fonts/Jost-Regular.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 600;
-    src: url(../fonts/Jost-Medium.woff) format('woff'),
-         url(../fonts/Jost-Medium.ttf) format('truetype');
+  font-family: "pretendard";
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/Pretendard-Light.woff2) format("woff2");
 }
 
 @font-face {
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 700;
-    src:  url(../fonts/Jost-Bold.woff) format('woff'),
-         url(../fonts/Jost-Bold.ttf) format('truetype');
+  font-family: "pretendard";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Pretendard-Regular.woff2) format("woff2");
 }
 
 @font-face {
-    font-family: 'Universal Serif';
-    font-style: normal;
-    font-weight: 400;
-    src: url(../fonts/UniversalSerif.woff) format('woff'),
-         url(../fonts/UniversalSerif.ttf) format('truetype');
+  font-family: "pretendard";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/Pretendard-Medium.woff2) format("woff2");
 }
+
+@font-face {
+  font-family: "pretendard";
+  font-style: normal;
+  font-weight: 600;
+  src: url(../fonts/Pretendard-SemiBold.woff2) format("woff2");
+}
+@font-face {
+  font-family: "pretendard";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/Pretendard-Bold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/Montserrat-Bold.woff2) format("woff2");
+}
+
 body * {
-    font-family: 'Jost', sans-serif;
-    font-weight: 400;
+    font-family: "pretendard", sans-serif;
     font-size:14px;
+    color:#000;
+    font-weight: 400;
     line-height: 1.4;
-	color: #fff;
 }
 label,a,button,img,input,select {
 	transition-duration: .2s;
