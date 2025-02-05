@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+html {
+    overflow-x: hidden;
+}
+
+
+:root {
+    --purple-gradient:linear-gradient(180deg, #9E32C2 0%, #9A17C5 100%);
+    --blue-gradient:linear-gradient(180deg, #0047AB 0%, #1D71C5 100%);
+    --green-gradient:linear-gradient(90deg, #46D741 0%, #2D93AA 100%);
+    --some-gradient:linear-gradient(90deg, #352052 0%, #100429 100%);
+    --point-green:#0DFF00;
+    --point-purple:#9D20F7;
+    --textShadow:0.74px 1.48px 2.96px #00000063;
+    --gold:#EC9335;
+}
+.c_purple {
+    color: var(--point-purple) !important
+}
+.c_gold {
+    color: var(--gold) !important;
+}
+
+
+body {
+    background: #100429;
+    /* overflow-x: hidden; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
