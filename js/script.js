@@ -76,6 +76,10 @@ function famAnswerSlider() {
 function seedlingSlider(){
     if($(".seedlingSlider").length == 0) return;
     var swiper = new Swiper(".seedlingSlider", {
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
         pagination: {
             el: ".swiper-pagination",
         },
@@ -86,4 +90,10 @@ function seedlingSlider(){
 $(function(){
     famAnswerSlider();
     seedlingSlider();
+
+    AOS.init({
+        offset: 100, // 트리거 지점 조정
+        duration: 1000, // 애니메이션 지속 시간
+        easing: 'ease-in-out', // 부드러운 가속도 효과
+    });
 });

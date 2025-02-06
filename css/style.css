@@ -459,13 +459,13 @@ body {
 
 .products__intro {
     display:flex;
-    justify-content:center;
+    justify-content:flex-start;
     align-items:center;
     gap:30px;
     margin-top:130px;
 }
 .products__intro img {
-    max-width:700px;
+    max-width:50%;
     width:100%;
 }
 .products__intro .products__intro__text {
@@ -546,6 +546,12 @@ body {
 .seedlingSlider__outer {
     position:relative;
 }
+.seedlingSlider__outer>h3 {
+    font-size:20px;
+    text-align:center;
+    margin-bottom:40px;
+    font-weight:bold;
+}
 
 .seedlingSlider{
     max-width:1024px;
@@ -574,15 +580,103 @@ body {
     margin:0 15px !important;
 }
 
+.products__seedlings {}
+
+.seedlings__image {
+    text-align:right;
+}
+.seedlings__image img {
+    width:55%;
+}
+
+.icon__list__wrapper{
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    gap:30px;
+    margin-top:50px;
+}
+
+.icon__list {}
+
+.icon__list__item {
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    margin-bottom:15px;
+}
+
+.icon__list__item img {
+    width:90px;
+    margin-right:10px;
+}
+
+.icon__list__item h3 {
+    text-align:left;
+}
+
+.icon__list__item p {
+    text-align:left;
+}
+.icon__list__text {}
+.icon__list__text h3 {
+    font-size:16px;
+    padding-bottom:7px;
+    font-weight:bold;
+}
+.icon__list__text p {
+    font-size:16px;
+    line-height:1;
+}
+
+.seedlings__outer {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    margin:50px auto;
+}
+.seedlings__outer .seedlings__image {
+    width:55%;
+}
+.seedlings__outer .seedlings__image img {
+    width:100%;
+}
+.seedlings__outer .icon__list__item {
+    min-width:330px;
+}
+.hero.sub-pot {
+    background-image:url('../img/hero_sub_pot.jpg');
+}
+.hero.sub-hub {
+    background-image:url('../img/hero_sub_hub.jpg');
+}
+.view_pc {
+    display:block !important;
+}
+.view_mobile {
+    display:none !important;
+}
+
+.farmAnswerSlider__mobile {
+    display:none;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
+    .view_pc {
+        display:none !important;
+    }
+    .view_mobile {
+        display:block !important;
+    }
     .header__logo {
         position:relative;
     }
     .header {
         gap: 20px;
         justify-content: space-between;
-        padding-right:40px;
+        padding-right:20px;
     }
 
     .header__nav-list {
@@ -590,7 +684,7 @@ body {
     }
 
     .hero {
-        height: 300px;
+        height: 500px;
     }
 
     .hero__title {
@@ -606,17 +700,192 @@ body {
         gap: 40px;
     }
 
-    .info__text br {
-        display: none;
-    }
-
     .footer__links {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 5px 10px;
     }
 
     .footer__link {
         margin: 0;
+    }
+
+    .hero {
+        background-image:url('../img/hero_mo.jpg');
+    }
+    .info {
+        font-size:12px;
+        padding-bottom:0;
+    }
+    .info__text {
+        font-size:12px;
+        margin-top:0;
+        line-height:1.4;
+        margin-bottom:20px;
+    }
+    .products__grid {
+        padding:0 27.5px;
+    }
+    .footer__content,
+    .footer__top{
+        display:block;
+        text-align:center;
+    }
+    .footer__links {
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+        flex-wrap:wrap;
+    }
+    .footer__links a:first-child {
+        display:block;
+        width:100%;
+    }
+    .footer__info {
+        margin-left:0;
+        padding:0 20px;
+    }
+    .footer__info p{
+        width:50%;
+        text-align:left;
+        font-size:10px;
+    }
+    .footer{
+        margin-top:50px;
+        padding:20px 0 50px;
+    }
+    .hero.sub {
+        background-image:url('../img/hero_sub.jpg');
+    }
+    .info__text {
+        font-size:14px;
+    }
+    .logos {
+        display:block;
+    }
+    .logos__item__image-img{
+        max-width:110px;
+    }
+    .logos__item__image {
+        margin-right:5px;
+    }
+    .logos__item__text p{
+        font-size:12px;
+    }
+    .logos__outer:last-child {
+        margin-top:40px;
+    }
+    .farmAnswerSlider{
+        margin-top:0;
+    }
+    .logos {
+        margin-bottom:30px;
+    }
+    .farmAnswerSlider {
+        display:none;
+    }
+    .farmAnswerSlider__mobile img {
+        width:100%;
+    }
+    .hero.sub-products {
+        background-image:url('../img/hero_sub_products.jpg');
+    }
+    .products__intro{
+        margin-top:50px;
+        display:block;
+    }
+    .products__intro img{
+        max-width:100%;
+        margin-bottom:20px;
+    }
+    .products__intro .products__intro__text {
+        text-align:center;
+    }
+    .products__intro .products__intro__text h2{
+        font-size:14px;
+    }
+    .products__intro .products__intro__text p{
+        font-size:12px;
+    }
+    .products__best {
+        margin-top:50px;
+    }
+    .products__best h2{
+        font-size:16px;
+        margin-bottom:10px;
+        padding-bottom:0;
+    }
+    .products__best>p{
+        font-size:12px;
+    }
+    .products__best__item img {
+        width:150px;
+        height:200px;
+        object-fit:cover;
+    }
+    .products__best__item h3{
+        padding-bottom:10px;
+    }
+    .products__more p{
+        font-size:14px;
+    }
+    .products__more__btns {
+        display:block;
+    }
+    .products__more__btns a {
+        display:block;
+        margin-bottom:32px;
+        font-size:16px;
+    }
+    .products__more__btns a:last-child {
+        margin-bottom:0;
+    }
+    .hero.sub-seedlings {
+        background-image:url('../img/hero_sub_seedlings_mo.jpg');
+    }
+    .seedlings__image img{
+        width:100%;
+    }
+    .top__title.type2 p{
+        font-size:14px;
+    }
+    .top__title.type2{
+        font-size:17px;
+    }
+    .icon__list__text h3{
+        font-size:14px;
+    }
+    .icon__list__text p{
+        font-size:12px;
+    }
+    .icon__list__item img{
+        width:80px;
+    }
+    .seedlings__outer{
+        display:block;
+    }
+    .seedlings__outer .seedlings__image{
+        width:100%;
+        margin-bottom:50px;
+    }
+    .seedlings__outer .icon__list {
+        padding:0 20px;
+    }
+    .seedlingSlider__outer>h3{
+        font-size:16px;
+        margin-top:50px;
+    }
+    .seedlingSlider img{
+        height:320px;
+        object-fit:cover;
+    }
+    .seedlingSlider h4{
+        font-size:14px;
+    }
+    .hero.sub-pot {
+        background-image:url('../img/hero_sub_pot_mo.jpg');
+    }
+    .hero.sub-hub {
+        background-image:url('../img/hero_sub_hub_mo.jpg');
     }
 }

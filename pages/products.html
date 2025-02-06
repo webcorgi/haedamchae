@@ -16,6 +16,9 @@
         <!-- swiper slide -->
         <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
         <script src="../js/swiper-bundle.min.js"></script>
+
+        <link rel="stylesheet" href="../css/aos.css" />
+        <script src="../js/aos.js"></script>
     </head>
     <body>
 
@@ -27,22 +30,22 @@
             <nav class="header__nav">
                 <ul class="header__nav-list">
                     <li class="header__nav-item"><a href="../pages/intro.html" class="header__nav-link">회사 소개</a></li>
-                    <li class="header__nav-item"><a href="../pages/service.html" class="header__nav-link">서비스</a></li>
+                    <li class="header__nav-item"><a href="javascript:;" class="header__nav-link">서비스</a></li>
                     <li class="header__nav-item"><a href="../pages/products.html" class="header__nav-link header__nav-link-active">상품 소개</a></li>
                 </ul>
             </nav>
         </header>
 
         <div class="top__title__outer">
-            <h2 class="top__title">상품 소개</h2>
+            <h2 class="top__title" data-aos="fade-up">상품 소개</h2>
         </div>
 
         <!-- Hero Section -->
         <section class="hero sub sub-products"></section>
 
         <section class="products__intro">
-            <img src="../img/products_img1.jpg" alt="img">
-            <div class="products__intro__text">
+            <img src="../img/products_img1.jpg" alt="img"  data-aos="fade-right">
+            <div class="products__intro__text" data-aos="fade-up">
                 <h2>새싹부터 수확까지 직접 키우는 즐거움</h2>
                 <p>
                     도시농업 해담채와 함께라면 도심 속에서도<br />
@@ -57,8 +60,8 @@
 
 
         <section class="products__best">
-            <h2>BEST</h2>
-            <p>
+            <h2 data-aos="fade-up">BEST</h2>
+            <p data-aos="fade-up">
                 모종부터 인기 허브까지,<br />
                 도시농업 해담채가 엄선한 베스트 10
             </p>
@@ -108,7 +111,7 @@
         </section>
 
         <section class="products__more">
-            <div>
+            <div data-aos="fade-up">
                 <p>
                     도시농업 해담채의 상품은<br />
                     쿠팡과 네이버 스마트스토어를 통해<br />

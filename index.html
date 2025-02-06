@@ -13,9 +13,11 @@
         <script src="./js/jquery-2.2.4.min.js"></script>
         <script src="./js/script.js"></script>
 
-        <!-- swiper slide -->
         <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
         <script src="./js/swiper-bundle.min.js"></script>
+
+        <link rel="stylesheet" href="./css/aos.css" />
+        <script src="./js/aos.js"></script>
     </head>
     <body>
 
@@ -30,7 +32,7 @@
                         <a href="./pages/intro.html" class="header__nav-link">회사 소개</a>
                     </li>
                     <li class="header__nav-item">
-                        <a href="./pages/service.html" class="header__nav-link">서비스</a>
+                        <a href="javascript:;" class="header__nav-link">서비스</a>
                     </li>
                     <li class="header__nav-item">
                         <a href="./pages/products.html" class="header__nav-link">상품 소개</a>
@@ -44,17 +46,17 @@
 
         <!-- Info Section -->
         <section class="info">
-            <p class="info__text">오랜 시간 정성으로 건강한 모종을 키워온 도시농업 해담채는 자연의 가치를<br>
-                도시로 전하며, 고객 경험을 최우선으로 생각합니다.<br />
-                작은 씨앗이 아름다운 순간에서 이뤄지게 바라며 수 있도록 함께하겠습니다.
+            <p class="info__text" data-aos="fade-up">오랜 시간 정성으로 건강한 모종을 키워온<br class="view_mobile" /> 도시농업 해담채는 자연의 가치를<br class="view_pc"><br class="view_mobile" />
+                도시로 전하며, 고객 경험을 최우선으로 생각합니다.<br class="view_mobile" /><br class="view_pc" />
+                작은 씨앗이 여러분의 손끝에서 아름답게<br class="view_mobile" /> 피어날 수 있도록 함께하겠습니다.
             </p>
-            <button class="info__button">자세히 보기</button>
+            <button class="info__button" data-aos="fade-up">자세히 보기</button>
         </section>
 
         <!-- Products Section -->
         <section class="products ">
-            <h2 class="products__title">도시 속 작은 자연,<br>도시농업 해담채와 함께 키워보세요.</h2>
-            <div class="products__grid">
+            <h2 class="products__title" data-aos="fade-up">도시 속 작은 자연,<br>도시농업 해담채와 함께 키워보세요.</h2>
+            <div class="products__grid" data-aos="fade-up">
                 <a href="./pages/seedlings.html" class="products__item">
                     <div class="products__image-wrapper">
                         <img src="./img/main1.png" alt="모종" class="products__image">
@@ -106,7 +108,7 @@
                 <div class="footer__top">
                     <a href="./index.html" class="footer__logo">
                         <img src="./img/logo.svg" alt="로고" class="footer__logo-img">
-                    </a> 
+                    </a>
                     <div class="footer__content">
                         <div class="footer__links">
                             <a href="javascript:;" class="footer__link">공식 판매처</a>
