@@ -29,7 +29,7 @@ function famAnswerSlider() {
         effect: 'fade',
         loopedSlides: totalSlides,
         autoplay: {
-            delay: 3000,
+            delay: 300000,
             disableOnInteraction: false
         },
         navigation: {
@@ -82,14 +82,21 @@ function seedlingSlider(){
         },
         pagination: {
             el: ".swiper-pagination",
+            clickable: true,
         },
     });
 }
-
+function isDepth(){
+    if($(".isDepth").length == 0) return;
+    $(".isDepth").on("click", function(){
+        $('.depth2').slideToggle()
+    });
+}
 
 $(function(){
     famAnswerSlider();
     seedlingSlider();
+    isDepth();
 
     AOS.init({
         offset: 100, // 트리거 지점 조정
